@@ -1,9 +1,6 @@
 {
   "name": "lmsdirectory",
   "version": "1.0.0",
-  "engines": {
-        "node": "0.10.x"
-      },
   "description": "lmsdirectory: An Ionic project",
   "dependencies": {
     "gulp": "^3.5.6",
