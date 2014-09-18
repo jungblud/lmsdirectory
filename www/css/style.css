@@ -1,0 +1,13 @@
+/* Empty. Add your own CSS if you like */
+.bar-footer{
+	height:50px;
+	width: 320px;
+	margin: 0 auto;
+	border: none;
+}
+
+.bar.bar-stable {
+	border-color: #ffffff;
+	background-color: #ffffff;
+	background-image: none;
+}
