@@ -48,7 +48,7 @@
           <p align="center"><img ng-show="!data.queryStr.length" width="66%" src="img/lmslogo.png"/></p>
         </div>
       <ion-list>
-        <ion-item bindonce ng-repeat="resident in residents | filter:data.queryStr | orderBy:lastname" class="item item-button-right card" ng-show="data.queryStr.length" > 
+        <ion-item bindonce ng-repeat="resident in residents | filter:data.queryStr | orderBy:lastname" class="item item-button-right" ng-show="data.queryStr.length" > 
           <h2>{{resident.firstname}} {{resident.lastname}} {{resident.phone}}</h2>
           <p>{{resident.address}}</p>
           <button href="tel:+1-{{resident.phone}}" class="button button-positive">
