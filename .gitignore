@@ -27,9 +27,6 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 
-# data
-www/residents.json
-
 # build
 .tmp
 .sass-cache
