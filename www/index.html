@@ -40,11 +40,11 @@
         <div class="list list-inset">
           <label class="item item-input">
             <i class="icon ion-search placeholder-icon"></i>
-            <input ng-model="data.queryStr" type="Search" placeholder="Search"/>
+            <input ng-model="data.queryStr" type="Search" placeholder="Search" ng-minlength="3"/>
           </label>
           </div>
         <div class="">
-          <p align="center"><img ng-show="!data.queryStr.length" width="33%" src="img/lmslogo.png"/></p>
+          <p align="center"><img ng-show="!data.queryStr.length" width="66%" src="img/lmslogo.png"/></p>
         </div>
       <ion-list>
         <ion-item ng-repeat="resident in residents | filter:data.queryStr | orderBy:lastname" class="item item-button-right card" ng-show="data.queryStr.length" > 
