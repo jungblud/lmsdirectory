@@ -51,7 +51,7 @@
         <ion-item bindonce ng-repeat="resident in residents | filter:data.queryStr | orderBy:lastname" class="item item-button-right" ng-show="data.queryStr.length" > 
           <h2>{{resident.firstname}} {{resident.lastname}} {{resident.phone}}</h2>
           <p>{{resident.address}}</p>
-          <button href="tel:+1-{{resident.phone}}" class="button button-positive">
+          <button ng-href="tel:+1-{{resident.phone}}" class="button button-positive">
             <i class="icon ion-ios7-telephone"></i>
           </button>
         </ion-item>
