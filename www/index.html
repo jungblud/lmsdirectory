@@ -35,9 +35,6 @@
   <body onload="startTimer()">
 
     <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">LMS Directory</h1>
-      </ion-header-bar>
 
     <ion-content ng-controller="lmsAppCtrl">
         <div class="list list-inset">
@@ -47,7 +44,7 @@
           </label>
           </div>
         <div class="">
-          <p align="center"><img ng-show="!queryStr.length" width="66%" src="img/lmslogo.png"/></p>
+          <p align="center"><img ng-show="!data.queryStr.length" width="33%" src="img/lmslogo.png"/></p>
         </div>
       <ion-list>
         <ion-item ng-repeat="resident in residents | filter:data.queryStr | orderBy:lastname" class="item item-button-right card" ng-show="data.queryStr.length" > 
