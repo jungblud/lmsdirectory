@@ -6,6 +6,7 @@ css/style.css
 img/lmslogo.png
 residents.json
 js/app.js
+js/bindonce.js
 img/0.png
 img/1.png
 img/2.png
@@ -40,7 +41,6 @@ img/30.png
 img/31.png
 img/32.png
 img/33.png
-img/lmslogo.png
 
 NETWORK:
 *
