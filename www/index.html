@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="lmsApp" >
+<html ng-app="lmsApp">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
@@ -31,7 +31,10 @@
       }
 
     </script>
-
+  <script src="../js/addtohomescreen.js" />
+  <script>
+addToHomescreen();
+</script>
   </head>
   <body onload="startTimer()">
 
@@ -51,7 +54,7 @@
         <ion-item bindonce ng-repeat="resident in residents | filter:data.queryStr | orderBy:lastname | limitTo:15 track by resident.id" class="item item-button-right" ng-show="data.queryStr.length" > 
           <h2>{{resident.firstname}} {{resident.lastname}} </h2>
           <p>{{resident.address}}</p>
-          <a class="button icon-left ion-ios7-telephone button-calm button-outline" ng-href="tel: {{resident.phone}}">{{resident.phone}}</a>
+          <a align="right" class="button icon-right ion-ios7-telephone button-calm button-outline" ng-href="tel: {{resident.phone}}">{{resident.phone}}</a>
         </ion-item>
       </ion-list>
       </ion-content>
