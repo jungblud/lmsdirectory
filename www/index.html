@@ -24,16 +24,49 @@
     <script src="js/addtohomescreen.js"></script>
     <script>
     addToHomescreen({
-       skipFirstVisit: true,
-       maxDisplayCount: 1
+       skipFirstVisit: false,
+       maxDisplayCount: 3
     });
     </script>
     <!-- your app's js -->
     <script src="js/app.js"></script>
     <script type="text/javascript">
+    var links = [ "http://www.thehaistengroup.com/", 
+          "http://www.chattanoogapropertyinfo.com/", 
+          "http://walldorf.com/", 
+          "http://robinsonteam.yourkwagent.com/", 
+          "http://mtnviewford.com/", 
+          "http://www.mrtspizza.com/", 
+          "http://www.learningexpress.com/store/chattanooga/", 
+          "http://hhmcpas.com/", 
+          "http://www.hennens.net/", 
+          "http://www.gailjhomes.com/", 
+          "http://www.demosscapital.com/", 
+          "http://www.chattanoogaallergyclinic.com/", 
+          "http://www.bowersag.com/", 
+          "http://www.ehhlaw.com/", 
+          "http://fletcherbright.com/", 
+          "http://www.vincentprinting.com/", 
+          "http://www.hsgcpa.com/", 
+          "http://www.wingfieldscale.com/", 
+          "https://synthesislife.com/", 
+          "http://www.southernsurgicalarts.com/", 
+          "https://www.facebook.com/pages/The-Sandbox-Childrens-Boutique/154085097976225", 
+          "http://resultsphysiotherapy.com/", 
+          "http://www.mccallie.org/", 
+          "http://www.mountainmirror.com/", 
+          "http://www.laurentempletoninvestments.com/", 
+          "https://www.firsttennessee.com/", 
+          "http://dbscorporation.com/", 
+          "http://www.drcarico.com/", 
+          "http://www.baylorschool.org/", 
+          "http://www.alpinecamp.com/", 
+          "http://www.gps.edu/" ];
+
       function rotateAd() {
         var randomIndex = Math.floor(Math.random() * 33);
         document.getElementById("adimage").src = "img/"+randomIndex+".png";
+        document.getElementById("adlink").href = links[randomIndex];
       }
       function startTimer() {
         setInterval(rotateAd, 7000);
@@ -64,7 +97,7 @@
       </ion-list>
       </ion-content>
         <div class="bar bar-footer bar-stable">
-          <img id="adimage" src="img/0.png" />
+          <a href="#" id="adlink"><img id="adimage" src="img/0.png"/></a>
           <!--<script type="text/javascript">
               document.write(rotateAd());
           </script>
