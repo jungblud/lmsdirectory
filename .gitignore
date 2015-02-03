@@ -39,3 +39,5 @@ plugins
 *.swo
 *.log
 *.DS_Store
+
+hooks/after_prepare/010_add_platform_class.js
